@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><title>Kafe Excel Level 1-10</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdf3e7;--cd:#fffdf8;--tx:#4a3226;--mu:#9a7f6b;--br:#c0793f;--bk:#8f5427;--pk:#f4e0c8;--pk2:#c0875a;--gl:#d8f1d4;--g:#4fae5c;--rl:#f8e1d4;--r:#c8553d;--bd:#efdcc6;--se:#cfe8ff;--cb:#3e2c22;--wd:#c99a68;--s1:#fff6e8;--s2:#f3dcc0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241a16;--cd:#33261f;--tx:#f7e9dc;--mu:#c2a994;--pk:#5a4030;--gl:#25432b;--rl:#5c3428;--bd:#4c3a2e;--se:#2b4663;--cb:#2a1d16;--wd:#8a6140;--s1:#3b2b22;--s2:#2b1f18}}
+*{box-sizing:border-box}html,body{margin:0}
+body{background-color:var(--bg);background-image:linear-gradient(90deg,#c0875a1f 50%,transparent 50%),linear-gradient(#c0875a1f 50%,transparent 50%);background-size:36px 36px;color:var(--tx);font-family:"Fredoka","Nunito","Trebuchet MS",system-ui,sans-serif;padding:0 12px 18px}
+.w{max-width:600px;margin:auto}
+.aw{height:30px;margin:0 -12px 14px;background:repeating-linear-gradient(90deg,var(--pk2) 0 26px,#fffdf8 26px 52px);border-radius:0 0 22px 22px;box-shadow:0 5px 0 #0001;position:relative}
+.aw:after{content:"";position:absolute;left:0;right:0;bottom:-10px;height:12px;background:radial-gradient(circle at 13px 0,var(--pk2) 13px,transparent 14px) 0 0/52px 12px repeat-x}
+.c{background:var(--cd);border:2px solid var(--bd);border-radius:22px;padding:14px;margin-bottom:12px;box-shadow:0 4px 0 var(--bd)}
+h1{font-size:24px;margin:0 0 4px;color:var(--bk)}.m{color:var(--mu);font-size:13px}.ct{text-align:center}.big{font-size:56px;text-align:center}
+button{font:inherit;color:var(--tx);cursor:pointer}input{font:inherit;color:var(--tx)}
+.b{background:linear-gradient(#d99358,var(--br));color:#fff;border:0;border-bottom:4px solid var(--bk);border-radius:16px;padding:12px;width:100%;font-weight:700;font-size:16px;margin-top:8px;text-shadow:0 1px 0 #0003;transition:transform .1s}
+.b:active{transform:translateY(3px);border-bottom-width:1px}
+.b2{background:var(--cd);border:2px solid var(--bd);border-bottom:4px solid var(--bd);border-radius:13px;padding:8px 11px;font-weight:600;font-size:13px}.b.b2{color:var(--tx);text-shadow:none;background:var(--cd);border-color:var(--bd)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:14px;font-weight:600}
+.pb{height:12px;background:var(--bd);border-radius:9px;margin-top:9px;overflow:hidden}.pb i{display:block;height:100%;background:repeating-linear-gradient(45deg,var(--pk2) 0 10px,#dcb792 10px 20px);border-radius:9px;transition:width .5s}
+.hero{padding:22px 14px}.cup{font-size:70px;animation:bob 2s ease-in-out infinite}.steam{height:26px;font-size:18px;color:var(--mu)}.steam span{display:inline-block;margin:0 6px;opacity:0;animation:st 2.4s infinite}.steam span:nth-child(2){animation-delay:.8s}.steam span:nth-child(3){animation-delay:1.6s}
+@keyframes st{0%{transform:translateY(14px);opacity:0}50%{opacity:.8}100%{transform:translateY(-8px);opacity:0}}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-4deg)}}
+.ft{text-align:center;color:var(--mu);font-size:13px;margin-top:6px}
+.cb{background:var(--cb);color:#fff;border:8px solid var(--wd);border-radius:20px;padding:14px;margin-bottom:12px;text-align:center;box-shadow:0 5px 0 #0003,inset 0 0 22px #0006}.cb h1{color:#fff;letter-spacing:1px}.cb p{margin:4px 0 0;font-size:13px;opacity:.85;line-height:1.45}
+.lv{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.k{background:var(--cd);border:2px dashed var(--bd);border-radius:20px;padding:12px 8px;text-align:center;font-weight:700;position:relative;box-shadow:0 4px 0 var(--bd)}
+.k.o{background:var(--pk);border:2px solid var(--pk2);transform:rotate(-1deg);cursor:pointer;box-shadow:0 5px 0 var(--pk2)}.k.o:nth-child(even){transform:rotate(1deg)}.k.o:active{transform:scale(.96)}
+.k.l{filter:grayscale(.8);opacity:.6}.k i{font-style:normal;font-size:34px;display:block}
+.mi{align-items:center}.mi .m{margin-top:2px}
+.cu{display:flex;gap:10px;align-items:flex-start}.av{font-size:40px;line-height:1;animation:bob 2.6s ease-in-out infinite}
+.bub{background:var(--bg);border:2px solid var(--bd);border-radius:6px 18px 18px 18px;padding:10px 12px;font-size:14px;line-height:1.5;flex:1;animation:pop .4s}
+@keyframes pop{from{transform:scale(.85);opacity:0}}
+.nt{border-style:dashed;border-color:var(--pk2)}.nh{font-size:12px;font-weight:700;color:var(--pk2);letter-spacing:1px;border-bottom:2px dotted var(--bd);padding-bottom:6px;margin-bottom:10px}
+.tag{display:inline-block;background:var(--pk2);color:#fff;font-size:12px;font-weight:700;padding:3px 11px;border-radius:12px;margin:10px 0 6px;transform:rotate(-2deg)}
+.fx{position:relative;display:flex;align-items:center;gap:6px;margin:8px 0}.fx b{font-style:italic;color:var(--br);font-size:17px}
+.fx input{flex:1;min-width:0;border:3px solid var(--br);border-radius:13px;padding:9px;background:var(--cd);font-family:ui-monospace,monospace;font-size:14px;outline:none}.fx input:focus{border-color:var(--pk2);box-shadow:0 0 0 4px #c0875a33}
+#tp{position:absolute;left:0;top:100%;z-index:5;background:var(--cd);border:2px solid var(--bd);box-shadow:0 4px 10px #0003;border-radius:10px;padding:6px 9px;font-size:12px;font-family:ui-monospace,monospace;max-width:100%;display:none}
+#tp button{border:1px solid var(--bd);background:var(--bg);border-radius:8px;padding:3px 8px;margin:2px;font:inherit}
+.g{overflow:hidden;border:5px solid var(--wd);border-radius:14px;box-shadow:0 4px 0 #0002}
+.g table{table-layout:fixed;width:100%;border-collapse:collapse;font-size:11px;touch-action:none;user-select:none;-webkit-user-select:none;background:var(--cd)}
+.g td,.g th{border:1px solid var(--bd);padding:3px;height:23px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g th{background:var(--pk);text-align:center;font-weight:700}.g td.h{font-weight:700;background:var(--bg)}
+td.sel{background:var(--se)}td.act{outline:2px solid var(--g);outline-offset:-2px}td.ans{background:#fff176!important;color:#222;font-weight:700;animation:gl 1.6s infinite}td.er{color:#c8553d!important}
+@keyframes gl{50%{box-shadow:inset 0 0 0 2px #ffb300}}
+.ar{border:0!important;color:var(--r);font-weight:700}
+.fb{border-radius:16px;padding:10px 12px;font-size:13px;margin-top:9px;line-height:1.5;animation:pop .35s}.fb.ok{background:var(--gl);border:2px solid var(--g)}.fb.no{background:var(--rl);border:2px solid var(--pk2)}
+.row{display:flex;gap:7px;margin-top:9px}.row button{flex:1}
+.o{display:block;width:100%;text-align:left;background:var(--cd);border:2px solid var(--bd);border-bottom:4px solid var(--bd);border-radius:14px;padding:11px;margin-bottom:8px;font-size:14px}
+.o.ok{background:var(--gl);border-color:var(--g)}.o.no{background:var(--rl);border-color:var(--r)}
+input.nm{width:100%;border:3px solid var(--br);border-radius:16px;padding:12px;background:var(--cd);margin-top:10px;text-align:center;outline:none}
+code{background:var(--bg);padding:1px 6px;border-radius:6px;word-break:break-all}
+.cn{position:fixed;left:50%;top:38%;z-index:9;font-size:22px;font-weight:700;color:var(--bk);background:#fff8c9;border:3px solid #ffc107;border-radius:20px;padding:6px 14px;pointer-events:none;animation:rise 1.4s forwards;transform:translateX(-50%)}
+@keyframes rise{to{transform:translate(-50%,-90px);opacity:0}}
+.cf{position:fixed;top:-30px;z-index:9;font-size:24px;pointer-events:none;animation:fall 2.6s linear forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(360deg)}}
+#mb{position:fixed;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:20;width:50px;height:50px;border-radius:50%;border:3px solid var(--pk2);background:var(--cd);font-size:22px;box-shadow:0 4px 0 var(--bd);padding:0}
+.w{position:relative;z-index:1}
+#dc{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}#dc span{position:absolute;font-size:30px;opacity:.17;animation:dr 9s ease-in-out infinite}
+@keyframes dr{50%{transform:translateY(-16px) rotate(12deg)}}
+.gr{text-align:center;font-size:17px;letter-spacing:7px;margin:-2px 0 12px;white-space:nowrap;overflow:hidden}
+.scene{position:relative;background:linear-gradient(var(--s1),var(--s2));border:4px solid var(--wd);border-radius:28px;padding:20px 10px 16px;text-align:center;overflow:hidden;margin-bottom:12px;box-shadow:0 5px 0 var(--bd)}
+.sign{display:inline-block;position:relative;background:var(--wd);color:#fff;font-weight:700;font-size:25px;padding:8px 18px;border-radius:16px;border:3px solid var(--bk);box-shadow:0 4px 0 #0003;transform-origin:50% -22px;animation:sw 3.4s ease-in-out infinite;text-shadow:0 2px 0 #0003}
+.sign:before,.sign:after{content:"";position:absolute;top:-16px;width:3px;height:14px;background:var(--bk)}.sign:before{left:22px}.sign:after{right:22px}
+@keyframes sw{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+.crew{font-size:58px;display:flex;justify-content:center;align-items:flex-end;gap:8px;margin:6px 0 2px}
+.bear{display:inline-block;transform-origin:50% 90%;animation:wv 2.4s ease-in-out infinite}@keyframes wv{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(8deg) scale(1.07)}}
+.cupb{font-size:44px;animation:bob 2s ease-in-out infinite}.cat{display:inline-block;animation:wg 3s ease-in-out infinite}@keyframes wg{0%,100%{transform:rotate(5deg)}50%{transform:rotate(-7deg) translateY(-5px)}}
+.say{display:inline-block;position:relative;background:var(--cd);border:2px solid var(--bd);border-radius:18px;padding:9px 13px;font-size:14px;line-height:1.45;max-width:92%;margin-top:12px;box-shadow:0 3px 0 var(--bd)}
+.say:before{content:"";position:absolute;top:-10px;left:50%;margin-left:-9px;border:9px solid transparent;border-top:0;border-bottom-color:var(--bd)}
+.fl{position:absolute;font-size:26px;animation:fl 6s ease-in-out infinite}.f1{left:5%;top:34%}.f2{right:6%;top:30%;animation-delay:1s}.f3{left:9%;top:60%;animation-delay:2s}.f4{right:9%;top:58%;animation-delay:.5s}.f5{left:4%;top:6%;animation-delay:3s}.f6{right:4%;top:6%;animation-delay:1.5s}
+@keyframes fl{50%{transform:translateY(-12px) rotate(10deg)}}
+.lbl{font-weight:700;color:var(--bk);font-size:15px}.bn{animation:pu 1.8s ease-in-out infinite}@keyframes pu{50%{transform:scale(1.04)}}
+</style>
+</head><body><div id="dc"><span style="left:4%;top:14%">☕</span><span style="left:86%;top:20%;animation-delay:1s">🥐</span><span style="left:10%;top:48%;animation-delay:2s">🍪</span><span style="left:88%;top:52%;animation-delay:3s">🧁</span><span style="left:6%;top:80%;animation-delay:1.5s">🍩</span><span style="left:84%;top:84%;animation-delay:.5s">🍰</span><span style="left:46%;top:92%;animation-delay:2.5s">🫖</span></div><div class="w" id="A"></div><button id="mb" aria-label="Musik">🎵</button>
+<script>
+var $=function(s){return document.querySelector(s)},A=$('#A'),S={name:'',done:{},cash:0};
+try{var sv=JSON.parse(localStorage.getItem('kx2')||'null');if(sv)S=sv}catch(e){}
+function save(){try{localStorage.setItem('kx2',JSON.stringify(S))}catch(e){}}
+/* ===== MESIN RUMUS ===== */
+var SY={SUM:'number1|[number2]|...',AVERAGE:'number1|[number2]|...',COUNT:'value1|[value2]|...',COUNTIF:'range|criteria',COUNTIFS:'criteria_range1|criteria1|[criteria_range2]|[criteria2]|...',SUMIF:'range|criteria|[sum_range]',SUMIFS:'sum_range|criteria_range1|criteria1|[criteria_range2]|[criteria2]|...',AVERAGEIF:'range|criteria|[average_range]',AVERAGEIFS:'average_range|criteria_range1|criteria1|[criteria_range2]|[criteria2]|...',IF:'logical_test|[value_if_true]|[value_if_false]',IFS:'logical_test1|value_if_true1|[logical_test2]|[value_if_true2]|...',AND:'logical1|[logical2]|...',OR:'logical1|[logical2]|...',IFERROR:'value|value_if_error',TRIM:'text',LEFT:'text|[num_chars]',RIGHT:'text|[num_chars]',MID:'text|start_num|num_chars',TEXTJOIN:'delimiter|ignore_empty|text1|[text2]|...',VLOOKUP:'lookup_value|table_array|col_index_num|[range_lookup]',HLOOKUP:'lookup_value|table_array|row_index_num|[range_lookup]',XLOOKUP:'lookup_value|lookup_array|return_array|[if_not_found]|[match_mode]|[search_mode]',INDEX:'array|row_num|[column_num]',MATCH:'lookup_value|lookup_array|[match_type]'};
+function CL(s){var n=0;for(var i=0;i<s.length;i++)n=n*26+s.charCodeAt(i)-64;return n}
+function ref(a){var m=/^([A-Z]+)(\d+)$/.exec(a);return[+m[2],CL(m[1])]}
+function ref2(r,c){return String.fromCharCode(64+c)+r}
+var fl=function(x){return Array.isArray(x)?[].concat.apply([],x):[x]},sc=function(x){return Array.isArray(x)?x[0][0]:x};
+function tr(x){x=sc(x);return x===true||(typeof x=='number'&&x!==0)||(typeof x=='string'&&x.toUpperCase()=='TRUE')}
+function eq(a,b){a=sc(a);b=sc(b);if(typeof a=='number'&&typeof b=='number')return a==b;return String(a).toLowerCase()==String(b).toLowerCase()}
+function nums(a){var o=[];a.forEach(function(t){var x=t();if(Array.isArray(x))fl(x).forEach(function(y){if(typeof y=='number')o.push(y)});else{var n=typeof x=='number'?x:parseFloat(x);if(isNaN(n))throw'#VALUE!';o.push(n)}});return o}
+function cr(c){c=sc(c);var o='=',v=c,m;if(typeof c=='string'&&(m=/^(<=|>=|<>|=|<|>)(.*)$/.exec(c))){o=m[1];v=m[2]}
+var n=typeof v=='number'?v:(v!==''&&!isNaN(+v)?+v:null);
+return function(x){if(n!==null&&typeof x=='number')return o=='='?x==n:o=='<>'?x!=n:o=='>'?x>n:o=='<'?x<n:o=='>='?x>=n:x<=n;var a=String(x).toLowerCase(),b=String(v).toLowerCase();return o=='='?a==b:o=='<>'?a!=b:false}}
+function mask(a,s){var k=fl(a[s]()).map(function(){return true});for(var j=s;j<a.length;j+=2){var rr=fl(a[j]()),p=cr(a[j+1]());rr.forEach(function(x,t){if(!p(x))k[t]=false})}return k}
+function pick(vals,k){var o=[];vals.forEach(function(x,i){if(k[i]&&typeof x=='number')o.push(x)});return o}
+function avg(o){if(!o.length)throw'#DIV/0!';return o.reduce(function(s,x){return s+x},0)/o.length}
+var F={SUM:function(a){return nums(a).reduce(function(s,x){return s+x},0)},AVERAGE:function(a){return avg(nums(a))},
+COUNT:function(a){var c=0;a.forEach(function(t){fl(t()).forEach(function(x){if(typeof x=='number')c++})});return c},
+COUNTIFS:function(a){return mask(a,0).filter(Boolean).length},COUNTIF:function(a){return mask(a.slice(0,2),0).filter(Boolean).length},
+SUMIF:function(a){var v=fl((a[2]||a[0])());return pick(v,mask(a.slice(0,2),0)).reduce(function(s,x){return s+x},0)},
+SUMIFS:function(a){return pick(fl(a[0]()),mask(a,1)).reduce(function(s,x){return s+x},0)},
+AVERAGEIF:function(a){return avg(pick(fl((a[2]||a[0])()),mask(a.slice(0,2),0)))},AVERAGEIFS:function(a){return avg(pick(fl(a[0]()),mask(a,1)))},
+IF:function(a){return tr(a[0]())?(a[1]?a[1]():true):(a[2]?a[2]():false)},
+IFS:function(a){for(var i=0;i<a.length;i+=2)if(tr(a[i]()))return a[i+1]();throw'#N/A'},
+AND:function(a){return fl(a.map(function(t){return t()})).every(tr)},OR:function(a){return fl(a.map(function(t){return t()})).some(tr)},
+IFERROR:function(a){try{var v=a[0]();if(typeof v=='string'&&v[0]=='#')return a[1]();return v}catch(e){return a[1]()}},
+TRIM:function(a){return String(sc(a[0]())).trim().replace(/ +/g,' ')},
+LEFT:function(a){return String(sc(a[0]())).slice(0,a[1]?sc(a[1]()):1)},RIGHT:function(a){var s=String(sc(a[0]())),n=a[1]?sc(a[1]()):1;return n?s.slice(-n):''},
+MID:function(a){var s=String(sc(a[0]())),b=sc(a[1]()),n=sc(a[2]());if(b<1||n<0)throw'#VALUE!';return s.substr(b-1,n)},
+TEXTJOIN:function(a){var d=String(sc(a[0]())),ig=tr(a[1]()),o=[];a.slice(2).forEach(function(t){fl(t()).forEach(function(x){if(!(ig&&x===''))o.push(x)})});return o.join(d)},
+VLOOKUP:function(a){var v=sc(a[0]()),T=a[1](),c=sc(a[2]()),ex=a[3]?!tr(a[3]()):false,i,r=-1;if(c<1||c>T[0].length)throw'#REF!';
+for(i=0;i<T.length;i++){if(ex?eq(T[i][0],v):(typeof T[i][0]==typeof v&&T[i][0]<=v))r=i;if(!ex&&r>=0&&T[i][0]>v)break;if(ex&&r>=0)break}if(r<0)throw'#N/A';return T[r][c-1]},
+HLOOKUP:function(a){var v=sc(a[0]()),T=a[1](),c=sc(a[2]()),ex=a[3]?!tr(a[3]()):false,i,r=-1;if(c<1||c>T.length)throw'#REF!';
+for(i=0;i<T[0].length;i++){if(ex?eq(T[0][i],v):(typeof T[0][i]==typeof v&&T[0][i]<=v))r=i;if(ex&&r>=0)break}if(r<0)throw'#N/A';return T[c-1][r]},
+XLOOKUP:function(a){var v=sc(a[0]()),L=fl(a[1]()),R=fl(a[2]()),i=-1,k;for(k=0;k<L.length;k++)if(eq(L[k],v)){i=k;break}if(i<0){if(a[3])return a[3]();throw'#N/A'}return R[i]},
+INDEX:function(a){var T=a[0](),r=sc(a[1]()),c=a[2]?sc(a[2]()):0,v;if(!Array.isArray(T))return T;
+if(!c){v=T[0].length==1?(T[r-1]||[])[0]:T.length==1?T[0][r-1]:undefined}else v=(T[r-1]||[])[c-1];if(v===undefined)throw'#REF!';return v},
+MATCH:function(a){var v=sc(a[0]()),L=fl(a[1]()),t=a[2]?sc(a[2]()):1,i,r=-1;for(i=0;i<L.length;i++){if(t==0?eq(L[i],v):(typeof L[i]==typeof v&&L[i]<=v))r=i;if(t==0&&r>=0)break}if(r<0)throw'#N/A';return r+1}};
+function E(src,W){var T=[],re=/\s*(?:(\d+\.?\d*)|("(?:[^"]|"")*")|([A-Za-z]+)\(|([A-Za-z]+\d+(?::[A-Za-z]+\d+)?)|(TRUE|FALSE)\b|(<=|>=|<>|[-+*\/&=<>(),]))/giy,m,p=0,i=0;
+try{while(p<src.length){re.lastIndex=p;m=re.exec(src);if(!m){if(/^\s*$/.test(src.slice(p)))break;throw'#NAME?'}
+T.push(m[1]!==undefined?{k:'n',v:+m[1]}:m[2]?{k:'s',v:m[2].slice(1,-1).replace(/""/g,'"')}:m[3]?{k:'f',v:m[3].toUpperCase()}:m[4]?{k:'r',v:m[4].toUpperCase()}:m[5]?{k:'b',v:m[5].toUpperCase()=='TRUE'}:{k:'o',v:m[6]});p=re.lastIndex}
+function cv(a){var x=W.v[a];return x===undefined?'':x}
+function ops(l,s,nx){return function(){var x=nx();while(T[i]&&T[i].k=='o'&&s.indexOf(T[i].v)>=0){var o=T[i++].v,y=nx();x=(function(x,y,o){return function(){return bin(x(),y(),o)}})(x,y,o)}return x}()}
+function bin(a,b,o){a=sc(a);b=sc(b);if(o=='&')return String(a)+String(b);if(/[-+*\/]/.test(o)){a=+a;b=+b;if(isNaN(a)||isNaN(b))throw'#VALUE!';if(o=='/'&&b==0)throw'#DIV/0!';return o=='+'?a+b:o=='-'?a-b:o=='*'?a*b:a/b}
+var x,y;if(typeof a=='number'&&typeof b=='number'){x=a;y=b}else{x=String(a).toLowerCase();y=String(b).toLowerCase()}return o=='='?x==y:o=='<>'?x!=y:o=='<'?x<y:o=='>'?x>y:o=='<='?x<=y:x>=y}
+function cmp(){return ops(0,['<=','>=','<>','=','<','>'],cat)}function cat(){return ops(0,['&'],add)}function add(){return ops(0,['+','-'],mul)}function mul(){return ops(0,['*','/'],un)}
+function un(){if(T[i]&&T[i].k=='o'&&T[i].v=='-'){i++;var x=un();return function(){return -sc(x())}}return pri()}
+function pri(){var t=T[i++];if(!t)throw'#NAME?';
+if(t.k=='n'||t.k=='s'||t.k=='b')return function(){return t.v};
+if(t.k=='r')return function(){var q=t.v.split(':');if(q.length==1)return cv(q[0]);var a=ref(q[0]),b=ref(q[1]),o=[],r,c;for(r=Math.min(a[0],b[0]);r<=Math.max(a[0],b[0]);r++){var w=[];for(c=Math.min(a[1],b[1]);c<=Math.max(a[1],b[1]);c++)w.push(cv(ref2(r,c)));o.push(w)}return o};
+if(t.k=='f'){var ar=[];if(T[i]&&T[i].v==')')i++;else{for(;;){ar.push(cmp());if(T[i]&&T[i].v==','){i++;continue}if(T[i]&&T[i].v==')'){i++;break}throw'#NAME?'}}
+return function(){if(!F[t.v])throw'#NAME?';return F[t.v](ar)}}
+if(t.v=='('){var x=cmp();if(!T[i]||T[i].v!=')')throw'#NAME?';i++;return x}throw'#NAME?'}
+var r=cmp();if(i<T.length)throw'#NAME?';r=r();r=sc(r);return r===undefined?'':r}catch(e){return typeof e=='string'&&e[0]=='#'?e:'#VALUE!'}}
+/* ===== BANK SOAL (dibuat otomatis, jawaban dihitung mesin rumus) ===== */
+function rng(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+var NM=['Dina','Adi','Sari','Rudi','Tina','Eko','Lia','Bima','Nia','Fajar','Wulan','Yoga'],AV=['👩','🧔','👵','🧑','👩‍🦱','👨','👧','🧓','👱','🧑‍🍳'],
+MN=[['Latte','Kopi',25],['Cappuccino','Kopi',28],['Americano','Kopi',20],['Teh Tarik','Teh',18],['Matcha','Teh',30],['Teh Lemon','Teh',15],['Croissant','Roti',22],['Roti Bakar','Roti',16]],
+MT=['Hitung Dasar','Hitung Bersyarat','Logika','Teks & Bersih-bersih','Lookup','INDEX & MATCH','Fitur & Visual'],
+LT=['Pemula Ringan','Dasar','Naik Pelan','Mulai Seru','Cerita Pelanggan','Gabungan','Jam Sibuk','Data Ramai','Laporan Lengkap','Ujian Barista'],LE=['☕','🥐','🧁','🍰','🥤','🍵','🥪','🍩','🧇','👑'],
+MC=[['Pivot Table','"Total Jumlah per Kategori lewat Pivot Table, susunannya?"',['Kategori di Rows, Jumlah di Values (Sum)','Jumlah di Rows, Kategori di Values','Kategori di Filters saja'],'Rows = pengelompokan, Values = angka yang dihitung.'],
+['Chart','"Tunjukkan tren omzet Senin sampai Minggu. Grafik terbaik?"',['Line chart','Pie chart','Scatter 3D'],'Line chart cocok untuk perubahan dari waktu ke waktu.'],
+['Visualisasi','"Peringkat menu terlaris, nama menu panjang-panjang. Pilih?"',['Bar chart horizontal','Pie dengan 12 irisan','Line chart'],'Bar horizontal mudah dibaca untuk peringkat dan label panjang.'],
+['Conditional Formatting','"Sorot otomatis pesanan dengan Jumlah di atas 3 jadi merah."',['Home > Conditional Formatting > Highlight Cells Rules > Greater Than','Home > Format Painter','Data > Sort'],'Warna ikut berubah otomatis kalau angkanya berubah.'],
+['Data Validation','"Kolom Kategori hanya boleh dropdown Kopi/Teh/Roti."',['Data > Data Validation > Allow: List','Insert > Chart > Dropdown','Home > Wrap Text'],'Allow: List, isi pilihan di Source.'],
+['Dashboard','"Saya mau klik tombol Kopi/Teh/Roti lalu pivot dan chart ikut berubah!"',['Slicer','Freeze Panes','Text to Columns'],'Slicer = tombol filter visual. Dashboard biasanya berisi KPI, chart, dan slicer.']];
+var TP=[['f',1,0,0],['f',1,1,0],['f',1,2,0],['f',2,0,1],['f',2,0,0],['f',2,1,1],['f',2,1,0],['f',2,2,1],['f',2,2,0],['f',3,0,1],['f',3,0,0],['f',3,1,1],['f',3,1,0],['f',3,2,0],['f',4,0,0],['f',4,1,0],['f',4,1,1],['f',4,1,2],['f',4,2,0],['mc',0],['f',5,0,0],['f',5,1,0],['f',5,2,0],['f',6,0,0],['f',6,1,0],['f',6,2,0],['mc',1],['mc',2],['mc',3],['mc',4],['mc',5],['mc',6]],
+MCT=[[['Data Cleaning','"Daftar pelanggan ada nama yang tercatat dobel. Fitur untuk menghapusnya?"',['Data > Remove Duplicates','Home > Find & Select','Insert > Table'],'Remove Duplicates ada di tab Data, pilih kolom acuannya.'],
+['Data Cleaning','"Spasi berlebih di awal nama bikin lookup gagal. Solusinya?"',['Pakai fungsi TRIM lalu Paste Values','Pakai fungsi SUM','Ubah warna sel'],'TRIM membuang spasi berlebih; salin hasilnya sebagai nilai.'],
+['Data Cleaning','"Satu kolom berisi Dina-Latte, mau dipisah jadi dua kolom. Fitur?"',['Data > Text to Columns','Data > Data Validation','Home > Merge & Center'],'Text to Columns memisah teks berdasarkan pemisah seperti strip.']],
+[['Cond. Formatting','"Sorot otomatis pesanan dengan Jumlah di atas 3 jadi merah."',['Home > Conditional Formatting > Highlight Cells Rules > Greater Than','Home > Format Painter','Data > Sort'],'Warna ikut berubah otomatis kalau angkanya berubah.'],
+['Cond. Formatting','"Stok menu yang kurang dari 5 harus otomatis oranye."',['Conditional Formatting > Highlight Cells Rules > Less Than','Home > Cell Styles > Good','Data > Filter'],'Less Than menyorot sel di bawah angka tertentu.'],
+['Cond. Formatting','"Beri warna pada 10 pesanan dengan Jumlah terbesar."',['Conditional Formatting > Top/Bottom Rules > Top 10 Items','Data > Subtotal','Formulas > Name Manager'],'Top/Bottom Rules menyorot nilai tertinggi atau terendah.']],
+[['Data Validation','"Kolom Kategori hanya boleh dropdown Kopi/Teh/Roti."',['Data > Data Validation > Allow: List','Insert > Chart > Dropdown','Home > Wrap Text'],'Allow: List, lalu isi pilihan di Source.'],
+['Data Validation','"Kolom Jumlah hanya boleh angka bulat 1 sampai 10."',['Data Validation > Allow: Whole number, between 1 and 10','Data Validation > Allow: List','Home > Number Format > Text'],'Whole number membatasi input ke bilangan bulat dalam rentang.'],
+['Data Validation','"Munculkan pesan peringatan kalau input tidak sesuai aturan."',['Data Validation > tab Error Alert','Review > New Comment','View > Freeze Panes'],'Tab Error Alert mengatur pesan saat input salah.']],
+[['Pivot Table','"Total Jumlah per Kategori lewat Pivot Table, susunannya?"',['Kategori di Rows, Jumlah di Values (Sum)','Jumlah di Rows, Kategori di Values','Kategori di Filters saja'],'Rows = pengelompokan, Values = angka yang dihitung.'],
+['Pivot Table','"Pivot menampilkan total Jumlah, tapi saya mau rata-ratanya."',['Value Field Settings > Average','Insert > Slicer','Data > Sort'],'Value Field Settings mengganti Sum menjadi Average.'],
+['Pivot Table','"Data baru sudah ditambah, tapi pivot belum berubah."',['Klik kanan pivot > Refresh','Hapus lalu ketik ulang pivot','Ganti jenis chart'],'Pivot tidak update otomatis; klik Refresh.']],
+[['Chart','"Tunjukkan tren omzet Senin sampai Minggu. Grafik terbaik?"',['Line chart','Pie chart','Scatter 3D'],'Line chart cocok untuk perubahan dari waktu ke waktu.'],
+['Chart','"Tampilkan proporsi penjualan 3 kategori dari total."',['Pie chart','Line chart','Scatter chart'],'Pie chart cocok untuk bagian dari keseluruhan (sedikit kategori).'],
+['Chart','"Bandingkan omzet 4 cabang kafe bulan ini."',['Column chart','Pie dengan 20 irisan','Area 3D'],'Column chart mudah untuk membandingkan antar kategori.']],
+[['Visualisasi','"Peringkat menu terlaris dengan nama menu panjang. Pilih?"',['Bar chart horizontal','Pie dengan 12 irisan','Line chart'],'Bar horizontal mudah dibaca untuk peringkat dan label panjang.'],
+['Visualisasi','"Grafik terlalu ramai warna dan garis. Prinsip yang benar?"',['Sederhanakan, hapus elemen yang tidak perlu','Tambah efek 3D','Pakai semua warna pelangi'],'Visual yang baik sederhana dan fokus pada pesan utama.'],
+['Visualisasi','"Judul grafik sebaiknya bagaimana?"',['Menjelaskan pesan utama grafik','Dikosongkan','Huruf sangat kecil'],'Judul yang jelas membantu pembaca paham sekilas.']],
+[['Dashboard','"Saya mau klik tombol Kopi/Teh/Roti lalu pivot dan chart ikut berubah!"',['Slicer','Freeze Panes','Text to Columns'],'Slicer = tombol filter visual untuk dashboard.'],
+['Dashboard','"Kotak besar berisi angka penting seperti total omzet disebut?"',['Kartu KPI','Freeze Panes','Footnote'],'KPI card menampilkan angka kunci secara menonjol.'],
+['Dashboard','"Dashboard yang baik sebaiknya bagaimana?"',['Ringkas, satu halaman, angka penting di atas','Memuat semua data mentah','Berisi 30 chart berbeda'],'Dashboard ringkas dan mudah dipindai.']]];
+function sh(a,R){a=a.slice();for(var j=a.length-1;j>0;j--){var k=Math.floor(R()*(j+1)),t=a[j];a[j]=a[k];a[k]=t}return a}
+var TN=['SUM','AVERAGE','COUNT','COUNTIF','SUMIF','COUNTIFS','SUMIFS','AVERAGEIF','AVERAGEIFS','IF','IFS','AND','OR','IFERROR','TRIM','LEFT','RIGHT','MID','TEXTJOIN','DC','VLOOKUP','HLOOKUP','XLOOKUP','INDEX','MATCH','INDEX+MATCH','CF','DV','PIVOT','CHART','VIS','DASH'],
+GN=['Hitung Dasar','Hitung Bersyarat','Logika','Teks & Bersih-bersih','Lookup','INDEX & MATCH'],
+OP=['"Kak, tolong bantu ya!"','"Permisi, bisa dibantu hitung?"','"Bos minta laporannya nih!"','"Aku buru-buru, tolong cepat ya!"','"Tolong cek datanya dong!"','"Catatan kasir perlu diolah."'],
+LN=['Putri','Ahmad','Sari','Rizki'],
+PF=['Menu {m} laris {n} porsi hari ini. ','Kafe ramai, antrean {n} orang. ','Barista baru butuh bantuan soal {m}. ','Bos minta laporan sebelum jam {n}. ','Stok {m} tinggal {n}. ','Pelanggan {m} ke-{n} hari ini. ','Hari ke-{n} promo {m}! ','Laporan minggu ke-{n}. '],
+WH={SUM:'SUM menjumlahkan angka.',AVERAGE:'AVERAGE = total dibagi banyak data.',COUNT:'COUNT menghitung sel angka.',COUNTIF:'COUNTIF menghitung dengan 1 syarat.',COUNTIFS:'COUNTIFS menghitung dengan banyak syarat.',SUMIF:'SUMIF menjumlah dengan 1 syarat.',SUMIFS:'SUMIFS menjumlah dengan banyak syarat.',AVERAGEIF:'AVERAGEIF rata-rata dengan 1 syarat.',AVERAGEIFS:'AVERAGEIFS rata-rata dengan banyak syarat.',IF:'IF memilih hasil sesuai syarat.',IFS:'IFS untuk syarat bertingkat; TRUE = selain itu.',AND:'AND benar jika semua syarat benar.',OR:'OR benar jika salah satu benar.',IFERROR:'IFERROR menangkap error seperti #N/A.',TRIM:'TRIM membuang spasi berlebih.',LEFT:'LEFT ambil karakter dari kiri.',RIGHT:'RIGHT ambil karakter dari kanan.',MID:'MID ambil karakter dari tengah.',TEXTJOIN:'TEXTJOIN gabung teks dengan pemisah.',VLOOKUP:'VLOOKUP cari di kolom kiri, ambil kolom ke-N.',HLOOKUP:'HLOOKUP cari di baris atas, ambil baris ke-N.',XLOOKUP:'XLOOKUP cari di satu kolom, ambil dari kolom lain.',INDEX:'INDEX ambil isi berdasarkan nomor urut.',MATCH:'MATCH beri nomor urut posisi.'},
+MCX=[[['Data Cleaning','"Huruf besar-kecil nama pelanggan acak. Mau huruf kapital di awal tiap kata."',['Fungsi PROPER','Fungsi SUM','Conditional Formatting'],'PROPER membuat huruf pertama tiap kata kapital.'],['Data Cleaning','"Ada sel kosong di tengah data. Cara cepat memilih semua sel kosong?"',['Ctrl+G > Special > Blanks','Data > Remove Duplicates','Insert > Pivot Table'],'Go To Special > Blanks memilih semua sel kosong sekaligus.'],['Data Cleaning','"Harga tersimpan sebagai teks (rata kiri), SUM hasilnya 0. Solusinya?"',['Ubah jadi Number (Convert to Number)','Hapus kolomnya','Ganti font']," Angka berformat teks tidak ikut dijumlah; ubah ke Number."]],
+[['Cond. Formatting','"Warnai seluruh baris pesanan kategori Kopi dengan warna cokelat."',['Conditional Formatting > New Rule > Use a formula','Insert > Shapes','Page Layout > Themes'],'Rumus di aturan baru bisa mewarnai satu baris penuh.'],['Cond. Formatting','"Tampilkan bar kecil di dalam sel untuk membandingkan Jumlah."',['Conditional Formatting > Data Bars','Insert > Table','Data > Sort'],'Data Bars menampilkan batang mini di dalam sel.'],['Cond. Formatting','"Tandai nama pelanggan yang muncul dua kali."',['Conditional Formatting > Highlight Cells > Duplicate Values','Data > Remove Duplicates (menghapus)','Home > Clear'],'Duplicate Values hanya menandai, tidak menghapus.']],
+[['Data Validation','"Tanggal pesanan hanya boleh diisi tanggal bulan ini."',['Data Validation > Allow: Date, between','Allow: List','Home > Number Format > Text'],'Allow: Date membatasi input ke rentang tanggal.'],['Data Validation','"Kode pesanan harus tepat 6 karakter."',['Data Validation > Allow: Text length, equal to 6','Allow: Whole number','Conditional Formatting'],'Text length membatasi panjang teks.'],['Data Validation','"Dropdown diambil dari daftar menu di sheet lain."',['Data Validation > List > Source: pilih range daftar menu','Mengetik satu per satu tiap sel','Insert > Slicer'],'Source bisa berupa range di sheet lain.']],
+[['Pivot Table','"Mau jumlah pesanan (bukan total Jumlah) per Kategori di Pivot."',['Value Field Settings > Count','Value Field Settings > Sum','Insert > Chart'],'Count menghitung banyak baris, Sum menjumlahkan angka.'],['Pivot Table','"Mau lihat omzet per bulan, tapi tanggal masih harian."',['Klik kanan tanggal > Group > Months','Hapus kolom tanggal','Sort A-Z'],'Group mengelompokkan tanggal jadi bulan atau tahun.'],['Pivot Table','"Mau Kategori di kolom dan Menu di baris pada Pivot."',['Kategori di Columns, Menu di Rows','Keduanya di Values','Keduanya di Filters'],'Rows turun ke bawah, Columns melebar ke samping.']],
+[['Chart','"Hubungan antara Harga dan Jumlah terjual (dua angka). Grafik?"',['Scatter chart','Pie chart','Donut'],'Scatter menunjukkan hubungan dua variabel angka.'],['Chart','"Bandingkan omzet 3 kategori selama 6 bulan."',['Line chart dengan 3 garis','Satu pie besar','Satu kartu KPI'],'Line multi-seri cocok untuk tren beberapa kategori.'],['Chart','"Sumbu Y chart dimulai dari 500 sehingga selisih tampak besar. Perbaikan?"',['Mulai sumbu Y dari 0','Perbesar judul','Tambah efek 3D'],'Sumbu terpotong bisa menyesatkan pembaca.']],
+[['Visualisasi','"Pie dengan 15 irisan sulit dibaca. Solusinya?"',['Ganti ke bar chart terurut','Tambah irisan lagi','Pakai efek 3D'],'Bar terurut lebih mudah dibandingkan.'],['Visualisasi','"Pembaca buta warna bingung membedakan merah dan hijau. Solusinya?"',['Pakai warna kontras dan tambahkan label','Tambah garis grid tebal','Perkecil font'],'Jangan hanya mengandalkan warna.'],['Visualisasi','"Mau menonjolkan menu terlaris di antara banyak batang."',['Warnai hanya batang terlaris berbeda','Warnai semua batang beda','Hapus judul'],'Warna kontras pada satu batang menarik perhatian.']],
+[['Dashboard','"Dashboard dilihat di HP. Tata letak yang tepat?"',['Susun vertikal, elemen besar, teks jelas','Elemen sekecil mungkin','Tabel 50 kolom'],'Di layar kecil, elemen perlu besar dan vertikal.'],['Dashboard','"Angka KPI harus ikut berubah saat data baru masuk."',['Hubungkan KPI ke pivot/rumus lalu Refresh','Ketik ulang angka manual','Screenshot tabel'],'Hubungkan ke sumber data agar otomatis.'],['Dashboard','"Satu slicer mau mengontrol dua pivot sekaligus."',['Slicer > Report Connections','Copy-paste slicer','Hapus salah satu pivot'],'Report Connections menghubungkan slicer ke beberapa pivot.']]];
+function mcq(L,M,idx,R,av){var z=MCT[idx].concat(MCX[idx])[(L*7+M)%6],pk=a=>a[Math.floor(R()*a.length)],pre='Hari ke-'+((L-1)*7+M)+': '+pk(PF).replace('{m}',pk(MN)[0]).replace('{n}',3+Math.floor(R()*7)),o=sh(z[2].map((t,i)=>({t:t,c:i==0})),R);return{mc:1,av:av,t:z[0],story:pre+z[1],opts:o,why:z[3],ans:z[2][0]}}
+function buildQ(L,M,Qi){var V=TP[Qi],R=rng(L*977+M*131+Qi*17+5),pk=a=>a[Math.floor(R()*a.length)],ri=k=>Math.floor(R()*k),av=pk(AV),TT=L<4?0:L<8?1:2;
+if(V[0]=='mc')return mcq(L,M,V[1],R,av);
+var n=5+Math.ceil(L*.7),nm=sh(NM,R).slice(0,n),rows=[],base={},H=['Pelanggan','Menu','Kategori','Jumlah','Harga','Kode'],i,name=TN[Qi],story=pk(OP),dy=['Sen','Sel','Rab','Kam','Jum'];
+for(i=0;i<n;i++){var mn=pk(MN);rows.push([nm[i],mn[0],mn[1],1+ri(6),mn[2]*1000])}
+var cat=rows[0][2],m2=pk(MN.filter(z=>z[1]==cat));rows[1][1]=m2[0];rows[1][2]=m2[1];rows[1][4]=m2[2]*1000;
+H.forEach((h,j)=>base[ref2(1,j+1)]=h);
+rows.forEach((r,i)=>r.concat([r[1].slice(0,3).toUpperCase()+'-'+(2023+i%3)+'-'+('0'+(i+1)).slice(-2)]).forEach((x,j)=>base[ref2(i+2,j+1)]=x));
+function bq(T){var W={v:Object.assign({},base),cols:6},le=n+1,x=n+3,ex=[],rg=c=>c+'2:'+c+le,D=rg('D'),C=rg('C'),Ee=rg('E'),B=rg('B'),Ar=rg('A'),Fc=rg('F'),tb='A2:E'+le,
+ro=ri(n),rr=ro+2,r0=rows[ro],t=2+ri(3),pm=rows[ri(n)][4],p2=pm+4000,pr=rows.filter(z=>z[2]==cat)[0][4]-1,kk=Math.min(n,3+ri(3)),h=3+ri(Math.max(1,n-3)),
+Dr='D'+rr,Er='E'+rr,Cr='C'+rr,Fr='F'+rr,s1=r0[0]+' (baris '+rr+')',miss=pk(['Budi','Citra','Gita','Hana']),pad=s=>' '.repeat(1+ri(2))+s+'  ',kj=kk+1,
+K=(l,v)=>{ex.push([l,v]);return 'B'+(x+ex.length-1)},q={av:av,W:W,cols:[16,18,14,13,14,17]},q1='"'+cat+'"';
+if(name=='HLOOKUP'){W.v={A1:'Hari',A2:'Omzet (rb)',A3:'Pelanggan'};dy.forEach((d,j)=>{W.v[ref2(1,j+2)]=d;W.v[ref2(2,j+2)]=(4+ri(6))*100;W.v[ref2(3,j+2)]=5+ri(20)});x=4;le=3;q.hz=1}
+var Z={
+SUM:[()=>['Hitung total Jumlah semua pesanan.','=SUM('+D+')'],()=>['Total Jumlah semua pesanan, tapi pesanan baris '+h+' dibatalkan (jangan dihitung).','=SUM(D2:D'+(h-1)+',D'+(h+1)+':D'+le+')'],()=>['Total Jumlah semua pesanan ditambah bonus 10%.','=SUM('+D+')*1.1']],
+AVERAGE:[()=>['Berapa rata-rata Jumlah per pesanan?','=AVERAGE('+D+')'],()=>['Rata-rata Harga untuk pesanan baris 2 sampai '+kj+' saja.','=AVERAGE(E2:E'+kj+')'],()=>['Rata-rata Harga semua pesanan, lalu kurangi diskon Rp1000.','=AVERAGE('+Ee+')-1000']],
+COUNT:[()=>['Ada berapa sel angka di kolom Jumlah?','=COUNT('+D+')'],()=>['Ada berapa sel angka di kolom Harga baris 2 sampai '+kj+'?','=COUNT(E2:E'+kj+')'],()=>['Ada berapa sel angka kalau kolom Jumlah dan Harga dihitung bersamaan?','=COUNT('+D+','+Ee+')']],
+COUNTIF:[()=>['Ada berapa pesanan kategori '+cat+'?','=COUNTIF('+C+','+q1+')'],()=>['Ada berapa pesanan dengan Jumlah lebih dari '+t+'?','=COUNTIF('+D+',">'+t+'")'],()=>['Ada berapa pesanan yang BUKAN kategori '+cat+'?','=COUNTIF('+C+',"<>'+cat+'")']],
+SUMIF:[()=>['Berapa total Jumlah kategori '+cat+'?','=SUMIF('+C+','+q1+','+D+')'],()=>['Total Harga dari pesanan yang Jumlahnya lebih dari '+t+'?','=SUMIF('+D+',">'+t+'",'+Ee+')'],()=>['Total Jumlah semua kategori KECUALI '+cat+'?','=SUMIF('+C+',"<>'+cat+'",'+D+')']],
+COUNTIFS:[()=>['Ada berapa pesanan kategori '+cat+' dengan Jumlah lebih dari '+t+'?','=COUNTIFS('+C+','+q1+','+D+',">'+t+'")'],()=>['Ada berapa pesanan kategori '+cat+' dengan Harga minimal '+pm+'?','=COUNTIFS('+C+','+q1+','+Ee+',">='+pm+'")'],()=>['Ada berapa pesanan bukan '+cat+', Jumlah minimal '+t+', dan Harga di bawah '+p2+'?','=COUNTIFS('+C+',"<>'+cat+'",'+D+',">='+t+'",'+Ee+',"<'+p2+'")']],
+SUMIFS:[()=>['Total Jumlah kategori '+cat+' yang Jumlahnya lebih dari '+t+'?','=SUMIFS('+D+','+C+','+q1+','+D+',">'+t+'")'],()=>['Total Harga kategori '+cat+' dengan Jumlah minimal '+t+'?','=SUMIFS('+Ee+','+C+','+q1+','+D+',">='+t+'")'],()=>['Total Jumlah bukan '+cat+', Harga minimal '+pm+', Jumlah maksimal '+(t+2)+'?','=SUMIFS('+D+','+C+',"<>'+cat+'",'+Ee+',">='+pm+'",'+D+',"<='+(t+2)+'")']],
+AVERAGEIF:[()=>['Rata-rata Jumlah kategori '+cat+'?','=AVERAGEIF('+C+','+q1+','+D+')'],()=>['Rata-rata Harga dari pesanan dengan Jumlah lebih dari '+t+'?','=AVERAGEIF('+D+',">'+t+'",'+Ee+')'],()=>['Rata-rata Harga semua kategori KECUALI '+cat+'?','=AVERAGEIF('+C+',"<>'+cat+'",'+Ee+')']],
+AVERAGEIFS:[()=>['Rata-rata Jumlah kategori '+cat+' dengan Harga di atas '+pr+'?','=AVERAGEIFS('+D+','+C+','+q1+','+Ee+',">'+pr+'")'],()=>['Rata-rata Harga kategori '+cat+' dengan Jumlah minimal '+t+'?','=AVERAGEIFS('+Ee+','+C+','+q1+','+D+',">='+t+'")'],()=>['Rata-rata Jumlah bukan '+cat+', Harga minimal '+pm+', Jumlah di bawah '+(t+3)+'?','=AVERAGEIFS('+D+','+C+',"<>'+cat+'",'+Ee+',">='+pm+'",'+D+',"<'+(t+3)+'")']],
+IF:[()=>['Pesanan '+s1+': tulis Grosir jika Jumlah >= '+t+', selain itu Eceran.','=IF('+Dr+'>='+t+',"Grosir","Eceran")'],()=>['Nilai pesanan '+s1+' = Jumlah x Harga. Tulis Besar jika nilainya >= '+(t*pm)+', selain itu Kecil.','=IF('+Dr+'*'+Er+'>='+(t*pm)+',"Besar","Kecil")'],()=>['Pesanan '+s1+': Jumlah >= '+(t+2)+' Besar, Jumlah >= '+t+' Sedang, selain itu Kecil. Pakai IF bersarang.','=IF('+Dr+'>='+(t+2)+',"Besar",IF('+Dr+'>='+t+',"Sedang","Kecil"))']],
+IFS:[()=>['Pesanan '+s1+': Jumlah >= '+(t+2)+' Besar, >= '+t+' Sedang, selain itu Kecil. Pakai IFS.','=IFS('+Dr+'>='+(t+2)+',"Besar",'+Dr+'>='+t+',"Sedang",TRUE,"Kecil")'],()=>['Harga pesanan '+s1+': >= '+pm+' Premium, >= '+(pm-5000)+' Standar, selain itu Hemat. Pakai IFS.','=IFS('+Er+'>='+pm+',"Premium",'+Er+'>='+(pm-5000)+',"Standar",TRUE,"Hemat")'],()=>['Pesanan '+s1+': Jumlah >= '+(t+3)+' A, >= '+(t+2)+' B, >= '+t+' C, selain itu D. Pakai IFS.','=IFS('+Dr+'>='+(t+3)+',"A",'+Dr+'>='+(t+2)+',"B",'+Dr+'>='+t+',"C",TRUE,"D")']],
+AND:[()=>['Diskon jika kategori '+cat+' DAN Jumlah >= '+t+', selain itu Normal. Cek '+s1+'.','=IF(AND('+Cr+'="'+cat+'",'+Dr+'>='+t+'),"Diskon","Normal")'],()=>['Diskon jika kategori '+cat+', Jumlah >= '+t+', DAN Harga >= '+pm+'. Cek '+s1+'.','=IF(AND('+Cr+'="'+cat+'",'+Dr+'>='+t+','+Er+'>='+pm+'),"Diskon","Normal")'],()=>['Diskon jika kategori '+cat+' DAN (Jumlah >= '+(t+2)+' ATAU Harga >= '+p2+'). Cek '+s1+'.','=IF(AND('+Cr+'="'+cat+'",OR('+Dr+'>='+(t+2)+','+Er+'>='+p2+')),"Diskon","Normal")']],
+OR:[()=>['Promo jika kategori '+cat+' ATAU Jumlah >= '+t+', selain itu Normal. Cek '+s1+'.','=IF(OR('+Cr+'="'+cat+'",'+Dr+'>='+t+'),"Promo","Normal")'],()=>['Promo jika kategori '+cat+', ATAU Jumlah >= '+t+', ATAU Harga >= '+p2+'. Cek '+s1+'.','=IF(OR('+Cr+'="'+cat+'",'+Dr+'>='+t+','+Er+'>='+p2+'),"Promo","Normal")'],()=>['Promo jika (kategori '+cat+' DAN Jumlah >= '+t+') ATAU Harga >= '+p2+'. Cek '+s1+'.','=IF(OR(AND('+Cr+'="'+cat+'",'+Dr+'>='+t+'),'+Er+'>='+p2+'),"Promo","Normal")']],
+IFERROR:[()=>{var c=K('Cari pelanggan',miss);return['Cari Harga pelanggan di '+c+'. Jika tidak ketemu tulis Tidak ada (pakai IFERROR + VLOOKUP).','=IFERROR(VLOOKUP('+c+','+tb+',5,FALSE),"Tidak ada")']},()=>{var c=K('Cari pelanggan',ri(2)?pk(nm):miss);return['Cari Harga pelanggan di '+c+' dengan INDEX+MATCH; jika tidak ada tulis Tidak ada (IFERROR).','=IFERROR(INDEX('+Ee+',MATCH('+c+','+Ar+',0)),"Tidak ada")']},()=>{var c=K('Cari pelanggan',pad(ri(2)?pk(nm):miss));return['Nama di '+c+' ada spasi berlebih. Cari Harga-nya (VLOOKUP); jika tidak ada tulis Belum pesan. Pakai IFERROR.','=IFERROR(VLOOKUP(TRIM('+c+'),'+tb+',5,FALSE),"Belum pesan")']}],
+TRIM:[()=>{var c=K('Nama kotor',pad(pk(NM)+'   '+pk(LN)));return['Rapikan teks di '+c+' (hapus spasi berlebih).','=TRIM('+c+')']},()=>{var c=K('Nama kotor',pad(pk(NM)+'   '+pk(LN)));return['Rapikan teks di '+c+', lalu ambil 3 huruf pertama.','=LEFT(TRIM('+c+'),3)']},()=>{var c=K('Nama kotor 1',pad(pk(NM)));var d=K('Nama kotor 2',pad(pk(LN)));return['Rapikan teks di '+c+' dan '+d+', lalu gabungkan dengan spasi lalu & lalu spasi di tengah (contoh: Dina & Putri).','=TRIM('+c+')&" & "&TRIM('+d+')']}],
+LEFT:[()=>['Kode pesanan '+s1+' ada di '+Fr+'. Ambil 3 huruf awal.','=LEFT('+Fr+',3)'],()=>['Kode di '+Fr+': ambil 3 huruf awal dan 2 angka akhir, pisahkan strip (contoh LAT-01).','=LEFT('+Fr+',3)&"-"&RIGHT('+Fr+',2)'],()=>{var pf=pk(['LAT','CAP','TEH','MAT','CRO']);return['Jika 3 huruf awal kode di '+Fr+' adalah '+pf+', tulis Cocok, selain itu Beda.','=IF(LEFT('+Fr+',3)="'+pf+'","Cocok","Beda")']}],
+RIGHT:[()=>['Kode pesanan '+s1+' ada di '+Fr+'. Ambil 2 karakter terakhir.','=RIGHT('+Fr+',2)'],()=>['Ambil 2 angka terakhir kode di '+Fr+' sebagai angka, lalu tambah 10.','=RIGHT('+Fr+',2)+10'],()=>['Ambil tahun (4 angka) dari kode di '+Fr+' hanya dengan LEFT dan RIGHT.','=RIGHT(LEFT('+Fr+',8),4)']],
+MID:[()=>['Kode pesanan '+s1+' di '+Fr+'. Ambil 4 angka tahun di tengah.','=MID('+Fr+',5,4)'],()=>['Ambil tahun dari kode di '+Fr+', lalu tambah 1 (tahun depan).','=MID('+Fr+',5,4)+1'],()=>['Dari kode di '+Fr+', tampilkan format tahun/nomor, contoh 2024/01.','=MID('+Fr+',5,4)&"/"&RIGHT('+Fr+',2)']],
+TEXTJOIN:[()=>['Gabungkan Menu baris 2 sampai '+kj+' dengan pemisah koma+spasi.','=TEXTJOIN(", ",TRUE,B2:B'+kj+')'],()=>['Gabungkan nama Pelanggan baris 2 sampai '+kj+' dengan pemisah spasi-strip-spasi.','=TEXTJOIN(" - ",TRUE,A2:A'+kj+')'],()=>['Gabungkan Menu baris 2 sampai '+kj+' dengan " + ", lalu tambah " = " dan total Jumlah baris itu.','=TEXTJOIN(" + ",TRUE,B2:B'+kj+')&" = "&SUM(D2:D'+kj+')']],
+VLOOKUP:[()=>{var c=K('Cari pelanggan',pk(nm));return['Cari Harga pelanggan di '+c+' dengan VLOOKUP.','=VLOOKUP('+c+','+tb+',5,FALSE)']},()=>{var c=K('Cari pelanggan',pk(nm));return['Cari Menu pelanggan di '+c+' dengan VLOOKUP.','=VLOOKUP('+c+','+tb+',2,FALSE)']},()=>{var c=K('Cari pelanggan',pk(nm));return['Hitung total bayar pelanggan di '+c+' (Harga x Jumlah) dengan VLOOKUP.','=VLOOKUP('+c+','+tb+',5,FALSE)*VLOOKUP('+c+','+tb+',4,FALSE)']}],
+HLOOKUP:[()=>{var c=K('Cari hari',pk(dy));return['Tabel mendatar. Cari omzet hari di '+c+' dengan HLOOKUP.','=HLOOKUP('+c+',B1:F2,2,FALSE)']},()=>{var c=K('Cari hari',pk(dy));return['Cari jumlah pelanggan hari di '+c+' dengan HLOOKUP.','=HLOOKUP('+c+',B1:F3,3,FALSE)']},()=>{var c=K('Cari hari',pk(dy));return['Hitung omzet per pelanggan hari di '+c+' (omzet dibagi jumlah pelanggan) dengan HLOOKUP.','=HLOOKUP('+c+',B1:F3,2,FALSE)/HLOOKUP('+c+',B1:F3,3,FALSE)']}],
+XLOOKUP:[()=>{var c=K('Cari pelanggan',pk(nm));return['Cari Jumlah pelanggan di '+c+' dengan XLOOKUP.','=XLOOKUP('+c+','+Ar+','+D+')']},()=>{var c=K('Cari kode',W.v[Fr]);return['Cari nama Pelanggan pemilik kode di '+c+' dengan XLOOKUP (hasil ada di kolom kiri).','=XLOOKUP('+c+','+Fc+','+Ar+')']},()=>{var c=K('Cari pelanggan',ri(2)?pk(nm):miss);return['Cari Harga pelanggan di '+c+' dengan XLOOKUP; jika tidak ada tulis Tidak ada.','=XLOOKUP('+c+','+Ar+','+Ee+',"Tidak ada")']}],
+INDEX:[()=>{var k=1+ri(n);return['Menu apa yang ada di urutan ke-'+k+' pada kolom Menu? Pakai INDEX.','=INDEX('+B+','+k+')']},()=>{var k=1+ri(n);return['Ambil isi baris data ke-'+k+' kolom ke-2 dari tabel '+tb+' dengan INDEX.','=INDEX('+tb+','+k+',2)']},()=>{var k=1+ri(n);return['Hitung total bayar pesanan ke-'+k+' (Harga x Jumlah) dengan INDEX.','=INDEX('+Ee+','+k+')*INDEX('+D+','+k+')']}],
+MATCH:[()=>{var c=K('Cari pelanggan',pk(nm));return['Pelanggan di '+c+' ada di urutan ke berapa pada kolom Pelanggan? Pakai MATCH.','=MATCH('+c+','+Ar+',0)']},()=>{var c=K('Cari menu',r0[1]);return['Menu di '+c+' pertama kali muncul di urutan ke berapa? Pakai MATCH.','=MATCH('+c+','+B+',0)']},()=>{var c=K('Cari pelanggan',pk(nm));return['Berapa nomor baris Excel sebenarnya untuk pelanggan di '+c+' (data mulai baris 2)? Pakai MATCH.','=MATCH('+c+','+Ar+',0)+1']}],
+'INDEX+MATCH':[()=>{var c=K('Cari pelanggan',pk(nm));return['Cari Menu pelanggan di '+c+' dengan INDEX+MATCH.','=INDEX('+B+',MATCH('+c+','+Ar+',0))']},()=>{var c=K('Cari kode',W.v[Fr]);return['Cari nama Pelanggan pemilik kode di '+c+' dengan INDEX+MATCH.','=INDEX('+Ar+',MATCH('+c+','+Fc+',0))']},()=>{var c=K('Cari pelanggan',pad(ri(2)?pk(nm):miss));return['Nama di '+c+' berspasi berlebih dan mungkin tidak ada. Cari Menu-nya dengan INDEX+MATCH; jika tidak ada tulis Belum pesan (IFERROR).','=IFERROR(INDEX('+B+',MATCH(TRIM('+c+'),'+Ar+',0)),"Belum pesan")']}]
+}[name][T]();
+var task=Z[0],sol=Z[1];ex.forEach((e,j)=>{W.v['A'+(x+j)]=e[0];W.v['B'+(x+j)]=e[1]});var ar=x+ex.length;W.v['A'+ar]='Hasil ➜';q.ans='B'+ar;W.rows=Math.max(ar,le);W.ex=x;
+q.t=T==0?name:T==1?GN[V[1]-1]:'Studi Kasus';q.story=story;q.task=task;q.sol=sol;
+var fn=[...new Set(sol.match(/[A-Z]+(?=\()/g))];q.hint=T==0?['Fungsi yang dibutuhkan: '+fn.join(', ')+'.','Mulai dengan: '+sol.slice(0,sol.indexOf('(')+1)+' ... lalu tutup kurung.']:T==1?['Fungsi yang terlibat: '+fn.join(', ')+'.']:['Pecah jadi langkah kecil lalu gabungkan. Fungsi kunci: '+fn.join(', ')+'.'];
+q.why=fn.map(f=>WH[f]).filter(Boolean).join(' ');q.must=['IFS','XLOOKUP','VLOOKUP','HLOOKUP','INDEX','MATCH','TEXTJOIN','IFERROR','LEFT','RIGHT'].filter(f=>task.indexOf(f)>=0).map(f=>new RegExp(f,'i'));
+W.v[q.ans]='';q.exp=E(sol.slice(1),W);return q}
+var q=null;[TT,0].some(function(T){q=bq(T);return !(typeof q.exp=='string'&&q.exp[0]=='#')});return q}
+/* ===== TAMPILAN ===== */
+var P=null,G=null;
+function sk(L,M){return S.done[L+'-'+M]||0}
+function fm(v){return typeof v=='number'?String(Math.round(v*1e4)/1e4).replace('.',','):v===true?'TRUE':v===false?'FALSE':String(v)}
+function rp(n){return 'Rp'+n.toLocaleString('id-ID')}
+function awn(){return '<div class="aw"></div><div class="gr">☕ 🥐 🍪 🧁 🍩 🍰 ☕</div>'}
+function coin(g){var d=document.createElement('div');d.className='cn';d.textContent='🪙 +'+rp(g);document.body.appendChild(d);setTimeout(function(){d.remove()},1500)}
+function conf(){var e=['🧁','🍰','☕','🥐','🍪','⭐','🌸','🍓'];for(var i=0;i<26;i++){var d=document.createElement('div');d.className='cf';d.textContent=e[i%8];d.style.left=Math.random()*95+'vw';d.style.animationDelay=Math.random()*1.2+'s';document.body.appendChild(d);setTimeout(function(x){x.remove()},4200,d)}}
+function login(){G=null;var nmv=S.name;A.innerHTML=awn()+'<div class="scene"><span class="fl f1">🥐</span><span class="fl f2">🧁</span><span class="fl f3">🍪</span><span class="fl f4">🍩</span><span class="fl f5">☕</span><span class="fl f6">🍰</span><div class="sign">☕ Kafe Excel ☕</div><div class="steam"><span>♨</span><span>♨</span><span>♨</span></div><div class="crew"><span class="bear">🐻</span><span class="cupb">☕</span><span class="cat">🐱</span></div><div class="say">'+(nmv?'Yeay, '+nmv+' balik lagi! Kopi dan kue kesukaanmu sudah siap 🥐':'Halo! Aku Beruang si barista, ini Mimi si kucing kasir 🐱. Siapa namamu, calon Barista Excel?')+'</div></div><div class="c ct hero">'+(nmv?'<button class="b bn" onclick="map()">Lanjut Main 🔔</button><button class="b b2" onclick="S.name=\'\';save();login()">Ganti Barista 🔄</button>':'<div class="lbl">📒 Buku Pesanan: tulis namamu</div><input class="nm" id="nm" placeholder="Nama Barista ✏️" maxlength="20" autocomplete="off"><button class="b bn" onclick="var v=$(\'#nm\').value.trim();if(!v)return;S.name=v;save();map()">Buka Pintu Kafe 🔔</button>')+'</div><div class="ft">🌿 10 level · 70 minilevel · 2.240 soal 🌿<br>Belajar Excel sambil ngopi ☕🍪</div>'}
+function map(){G=null;var h=awn()+'<div class="c top"><span>👩‍🍳 '+S.name+'</span><span>🪙 '+rp(S.cash)+'</span><button class="b2" onclick="login()">Keluar</button></div><div class="cb"><h1>☕ MENU LEVEL ☕</h1><p>Tiap minilevel = 1 putaran semua topik (32 soal, beda data). Makin tinggi level, soal makin sulit. Selesaikan 7 minilevel untuk membuka level berikutnya. Progres tersimpan, boleh lanjut nanti.</p></div><div class="lv">';
+for(var L=1;L<=10;L++){var op=L==1||sk(L-1,7)>0,s=0;for(var m=1;m<=7;m++)s+=sk(L,m);h+='<div class="k '+(op?'o':'l')+'" '+(op?'onclick="minis('+L+')"':'')+'><i>'+(op?LE[L-1]:'🔒')+'</i>Level '+L+'<div class="m">'+LT[L-1]+'</div><div class="m">⭐ '+s+'/21</div></div>'}
+A.innerHTML=h+'</div><button class="b b2" onclick="if(confirm(\'Hapus semua progres?\')){S.done={};S.cash=0;S.prog=null;save();map()}">Mulai Ulang Semua</button>'}
+function minis(L){G=null;var h=awn()+'<div class="c top"><button class="b2" onclick="map()">⬅️ Menu</button><span>'+LE[L-1]+' Level '+L+'</span></div><div class="cb"><h1>'+LT[L-1]+'</h1><p>7 minilevel · tiap minilevel 32 soal semua topik</p></div>';
+for(var m=1;m<=7;m++){var op=m==1||sk(L,m-1)>0,s=sk(L,m);h+='<div class="c top mi" style="'+(op?'':'opacity:.55;filter:grayscale(.7)')+'"><span>'+(op?'🍽️':'🔒')+' Minilevel '+m+'<div class="m">1 putaran: '+TP.length+' soal, semua topik</div></span><span>'+'⭐'.repeat(s)+'☆'.repeat(3-s)+(op?' <button class="b2" onclick="play('+L+','+m+')">'+(S.prog&&S.prog.k==L+'-'+m?'Lanjut':s?'Ulangi':'Main')+'</button>':'')+'</span></div>'}A.innerHTML=h}
+function play(L,M){P={L:L,M:M,i:0,ok:0,tip:0,st:0};if(S.prog&&S.prog.k==L+'-'+M){P.i=S.prog.i;P.ok=S.prog.ok;P.tip=S.prog.tip}showQ()}
+function topbar(){return '<div class="c"><div class="top"><button class="b2" onclick="minis('+P.L+')">⬅️</button><span>L'+P.L+' · M'+P.M+' · Soal '+(P.i+1)+'/'+TP.length+'</span><span>🪙'+rp(S.cash+P.tip)+' 🔥'+P.st+'</span></div><div class="pb"><i style="width:'+(P.i/TP.length*100)+'%"></i></div></div>'}
+function showQ(){P.done=false;P.tr=0;P.hint=0;P.fst=true;var q=buildQ(P.L,P.M,P.i);P.q=q;
+var h=awn()+topbar()+'<div class="c nt"><div class="nh">🧾 PESANAN #'+(P.i+1)+' · LEVEL '+P.L+'</div><div class="cu"><div class="av">'+q.av+'</div><div class="bub">'+q.story+(q.task?'<br><small>'+q.task+'</small>':'')+'</div></div><span class="tag">'+q.t+'</span>';
+if(q.mc){h+='<div id="os"></div><div id="fb"></div></div>';A.innerHTML=h;var o=$('#os');q.opts.forEach(function(x){var b=document.createElement('button');b.className='o';b.textContent=x.t;b.onclick=function(){if(P.done)return;if(x.c){b.className='o ok';win(1,q.why)}else{b.className='o no';P.tr++;P.fst=false;P.st=0;sfx('no');fb('Belum tepat, coba pilihan lain ya 💪','no')}};o.appendChild(b)});return}
+var W=q.W,cols=W.cols,t='<div class="g"><table id="tb"><colgroup><col style="width:8%">'+(q.hz?'':'')+q.cols.slice(0,cols).map(function(w){return'<col style="width:'+(q.hz?(92/cols)+'%':w+'%')+'">'}).join('')+'</colgroup><tr><th></th>';
+for(var c=1;c<=cols;c++)t+='<th>'+String.fromCharCode(64+c)+'</th>';t+='</tr>';
+for(var r=1;r<=W.rows;r++){t+='<tr><th>'+r+'</th>';for(c=1;c<=cols;c++){var a=ref2(r,c),v=W.v[a],isA=a==q.ans;t+='<td data-a="'+a+'" class="'+(isA?'ans':r==1||c==1&&r>=W.ex?'h':'')+'">'+(isA?'':v===undefined?(a==ref2(ref(q.ans)[0],3)?'<span class="ar">◀ isi rumus</span>':''):v)+'</td>'}t+='</tr>'}
+A.innerHTML=h+'<div class="fx"><b>fx</b><input id="bar" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="ketuk di sini, ketik rumus ="><div id="tp"></div></div>'+t+'</table></div><div class="row"><button class="b2" onclick="chk()">✅ Cek</button><button class="b2" onclick="hnt()">💡 Petunjuk</button><button class="b2" onclick="solu()">📖 Solusi</button></div><div id="fb"></div></div>';
+G={q:q,W:W,ans:q.ans,tb:$('#tb'),bar:$('#bar'),tp:$('#tp'),cell:$('#tb td.ans'),ed:false,ins:null,drag:false,fx:undefined,val:undefined,an:null,end:null};initG()}
+function fb(t,k){var f=$('#fb');if(f)f.innerHTML='<div class="fb '+k+'">'+t+'</div>'+(P.done?'<button class="b" onclick="adv()">'+(P.i==TP.length-1?'Selesai 🎉':'Soal berikutnya ➡️')+'</button>':'')}
+function win(first,why){P.done=true;var g=0;if(first&&P.fst&&!P.hint){P.ok++;P.st++;g=10000+Math.min(P.st,5)*2000}else{P.st=0;g=5000}P.tip+=g;coin(g);sfx('ok');fb('<b>'+['Pelanggan senang! 😍','Pesanan sempurna! ☕✨','Mantap, Barista! 🎉'][P.i%3]+' Tip +'+rp(g)+'</b><br>'+why,'ok')}
+function chk(){var q=G.q,v=G.val;if(P.done)return;if(G.fx===undefined){fb('Tulis rumus dulu di kotak fx, lalu tekan Enter.','no');return}
+var ok=typeof q.exp=='number'?(typeof v=='number'&&Math.abs(v-q.exp)<.005):String(v).toLowerCase()==String(q.exp).toLowerCase();
+if(ok&&q.must&&!q.must.every(function(r){return r.test(G.fx)})){fb('Hasilnya benar, tapi soal ini meminta fungsi tertentu. Baca instruksinya lagi ya 😉','no');return}
+if(ok)win(1,q.why);else{P.tr++;P.fst=false;P.st=0;sfx('no');fb('Hasilnya <b>'+fm(v)+'</b>, belum sesuai. Cek range dan syaratnya, atau minta petunjuk 💡','no')}}
+function hnt(){if(P.done)return;P.hint=1;fb('💡 '+G.q.hint.join('<br>💡 '),'no')}
+function solu(){if(P.done)return;P.hint=1;P.done=true;P.st=0;P.tip+=3000;fb('<b>Solusi:</b> <code>'+G.q.sol+'</code><br>Hasil: <b>'+fm(G.q.exp)+'</b><br>1. Ketuk kotak fx. 2. Ketik rumus di atas (range bisa kamu blok di tabel). 3. Tekan Enter, lalu Cek.<br>'+G.q.why,'ok')}
+function adv(){P.i++;if(P.i>=TP.length)fin();else{S.prog={k:P.L+'-'+P.M,i:P.i,ok:P.ok,tip:P.tip};save();showQ()}}
+function fin(){var s=P.ok>=TP.length*.85?3:P.ok>=TP.length*.55?2:1,k=P.L+'-'+P.M;S.prog=null;S.done[k]=Math.max(S.done[k]||0,s);S.cash+=P.tip;save();G=null;conf();sfx('win');var lvl=P.M==7,h='<div class="c ct"><div class="big">'+(lvl?'🏆':'🎊')+'</div><h1>'+(lvl?'Level '+P.L+' Selesai!':'Minilevel '+P.M+' Selesai!')+'</h1><p style="font-size:30px;margin:6px">'+'⭐'.repeat(s)+'☆'.repeat(3-s)+'</p><p>Tip hari ini <b>'+rp(P.tip)+'</b></p>';
+if(lvl)h+='<p class="m">Lencana Level '+P.L+' '+LE[P.L-1]+' didapat!'+(P.L<10?' Level '+(P.L+1)+' terbuka 🔓':' Kamu Barista Excel Legendaris! 👑')+'</p>';
+h+=(P.M<7?'<button class="b" onclick="play('+P.L+','+(P.M+1)+')">Minilevel '+(P.M+1)+' ▶️</button>':(P.L<10?'<button class="b" onclick="minis('+(P.L+1)+')">Ke Level '+(P.L+1)+' ▶️</button>':''))+'<button class="b b2" style="width:100%;margin-top:8px" onclick="play('+P.L+','+P.M+')">Ulangi 🔄</button><button class="b b2" style="width:100%;margin-top:8px" onclick="minis('+P.L+')">Daftar Minilevel</button></div>';A.innerHTML=h}
+/* ===== WORKSHEET INTERAKTIF ===== */
+function sel(a,b){G.an=a;G.end=b;var p=ref(a),q=ref(b),r1=Math.min(p[0],q[0]),r2=Math.max(p[0],q[0]),c1=Math.min(p[1],q[1]),c2=Math.max(p[1],q[1]);
+G.tb.querySelectorAll('td[data-a]').forEach(function(td){var x=ref(td.dataset.a);td.classList.toggle('sel',x[0]>=r1&&x[0]<=r2&&x[1]>=c1&&x[1]<=c2);td.classList.toggle('act',td.dataset.a==a)});
+var txt=a==b?a:ref2(r1,c1)+':'+ref2(r2,c2),bar=G.bar;
+if(G.ed){if(!G.ins)G.ins={s:bar.selectionStart,l:0};var v=bar.value;bar.value=v.slice(0,G.ins.s)+txt+v.slice(G.ins.s+G.ins.l);G.ins.l=txt.length;var cp=G.ins.s+txt.length;bar.setSelectionRange(cp,cp);tip()}
+else bar.value=a==G.ans?(G.fx||''):String(G.W.v[a]===undefined?'':G.W.v[a])}
+function ev(){var f=G.fx,r;G.W.v[G.ans]='';r=f[0]=='='?E(f.slice(1),G.W):(isNaN(+f)?f:+f);G.val=r;G.cell.textContent=fm(r);G.cell.classList.toggle('er',typeof r=='string'&&r[0]=='#')}
+function commit(){var f=G.bar.value;if(!G.ed||f===G.fx||f===''||f=='=')return;G.fx=f;ev()}
+function tip(){var bar=G.bar,v=bar.value,c=bar.selectionStart,st=[],q=false,m,i;
+for(i=0;i<c;i++){var ch=v[i];if(ch=='"')q=!q;if(q)continue;if(ch=='('){m=/([A-Za-z]+)$/.exec(v.slice(0,i));st.push({n:m?m[1].toUpperCase():'',a:0})}else if(ch==')')st.pop();else if(ch==','&&st.length)st[st.length-1].a++}
+var t=null,h='';for(i=st.length-1;i>=0;i--)if(SY[st[i].n]){t=st[i];break}
+if(t){var ar=SY[t.n].split('|'),k=t.a;if(ar[ar.length-1]=='...'&&k>=ar.length-1)k=ar.length-2;else if(k>ar.length-1)k=ar.length-1;h=t.n+'('+ar.map(function(x,j){return j==k?'<b>'+x+'</b>':x}).join(', ')+')'}
+else{m=/(?:^|[=(,+\-*\/&<>\s])([A-Za-z]{2,})$/.exec(v.slice(0,c));if(m&&!/^[A-Za-z]+\d/.test(m[1])){var u=m[1].toUpperCase();Object.keys(SY).filter(function(n){return n.indexOf(u)==0}).slice(0,6).forEach(function(n){h+='<button data-f="'+n+'" data-l="'+m[1].length+'">'+n+'</button>'})}}
+G.tp.innerHTML=h;G.tp.style.display=h&&G.ed?'block':'none'}
+function initG(){var bar=G.bar,tb=G.tb,tp=G.tp;
+bar.addEventListener('focus',function(){G.ed=true;G.ins=null;bar.value=G.fx||'=';setTimeout(function(){var e=bar.value.length;bar.setSelectionRange(e,e);tip()},0)});
+bar.addEventListener('blur',function(){commit();G.ed=false;G.ins=null;tp.style.display='none'});
+bar.addEventListener('keydown',function(e){if(e.key=='Enter'){e.preventDefault();bar.blur()}else if(e.key=='Escape'){bar.value=G.fx||'';bar.blur()}});
+['input','keyup','click'].forEach(function(n){bar.addEventListener(n,function(){G.ins=null;if(G.ed)tip()})});
+['mousedown','touchstart'].forEach(function(n){tp.addEventListener(n,function(e){e.preventDefault()},{passive:false});tb.addEventListener(n,function(e){if(G.ed)e.preventDefault()},{passive:false})});
+tp.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var c=bar.selectionStart,v=bar.value,l=+b.dataset.l,nv=v.slice(0,c-l)+b.dataset.f+'('+v.slice(c);bar.value=nv;var p=c-l+b.dataset.f.length+1;bar.focus({preventScroll:true});bar.setSelectionRange(p,p);tip()});
+tb.addEventListener('pointerdown',function(e){var td=e.target.closest('td[data-a]');if(!td)return;if(G.ed)e.preventDefault();G.drag=true;G.ins=null;sel(td.dataset.a,td.dataset.a)})}
+document.addEventListener('pointermove',function(e){if(!G||!G.drag)return;var el=document.elementFromPoint(e.clientX,e.clientY),td=el&&el.closest&&el.closest('td[data-a]');if(td&&td.dataset.a!==G.end)sel(G.an,td.dataset.a)});
+document.addEventListener('pointerup',function(){if(!G||!G.drag)return;G.drag=false;G.ins=null;if(G.ed)G.bar.focus({preventScroll:true})});
+/* ===== MUSIK & EFEK SUARA (dibuat langsung dengan Web Audio, tanpa file) ===== */
+var AC=null,MG=null,NB=null,MU={on:false,t:0,step:0},CH=[[60,64,67,71],[57,60,64,67],[62,65,69,72],[55,59,62,65]],BS=[36,33,38,43],PE=[72,74,76,79,81,84,79,76];
+function mtof(m){return 440*Math.pow(2,(m-69)/12)}
+function nt(f,t,d,ty,g){var o=AC.createOscillator(),v=AC.createGain();o.type=ty;o.frequency.value=f;v.gain.setValueAtTime(0,t);v.gain.linearRampToValueAtTime(g,t+.012);v.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(v);v.connect(MG);o.start(t);o.stop(t+d+.05)}
+function hat(t,g){var s=AC.createBufferSource(),f=AC.createBiquadFilter(),v=AC.createGain();s.buffer=NB;f.type='highpass';f.frequency.value=7000;v.gain.setValueAtTime(g,t);v.gain.exponentialRampToValueAtTime(.0001,t+.07);s.connect(f);f.connect(v);v.connect(MG);s.start(t)}
+function sched(){if(!MU.on)return;var B=60/92/2;while(MU.t<AC.currentTime+.4){var s=MU.step%32,bar=Math.floor(s/8),st=s%8,t=MU.t;
+if(st==0||st==3||(st==6&&bar%2))CH[bar].forEach(function(m){nt(mtof(m),t,1.1,'triangle',.06)});
+if(st==0||st==4)nt(mtof(BS[bar]),t,.7,'sine',.2);
+hat(t,st%2?.02:.04);
+if(Math.random()<.4&&st!=7)nt(mtof(PE[Math.floor(Math.random()*PE.length)]),t,.5,'sine',.09);
+MU.t+=B;MU.step++}
+setTimeout(sched,120)}
+function ub(){var b=$('#mb');if(b)b.textContent=MU.on?'🎵':'🔇'}
+function mon(){if(!AC){var C=window.AudioContext||window.webkitAudioContext;if(!C)return;AC=new C();MG=AC.createGain();MG.gain.value=.5;var lp=AC.createBiquadFilter();lp.type='lowpass';lp.frequency.value=2600;MG.connect(lp);lp.connect(AC.destination);NB=AC.createBuffer(1,AC.sampleRate*.1,AC.sampleRate);var d=NB.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1}
+AC.resume();MU.on=true;MU.t=AC.currentTime+.1;MU.step=0;sched();ub()}
+function moff(){MU.on=false;ub()}
+function sfx(k){if(!AC||!MU.on)return;var t=AC.currentTime+.02,L=k=='ok'?[[880,0],[1319,.1]]:k=='no'?[[247,0],[196,.14]]:[[523,0],[659,.12],[784,.24],[1047,.36]];L.forEach(function(x){nt(x[0],t+x[1],k=='win'?.5:.35,k=='no'?'triangle':'sine',.22)})}
+$('#mb').onclick=function(){if(MU.on){moff();S.mu=false}else{mon();S.mu=true}save()};
+['mousedown','touchstart'].forEach(function(n){$('#mb').addEventListener(n,function(e){e.preventDefault()},{passive:false})});
+document.addEventListener('pointerdown',function f(e){if(e.target.closest&&e.target.closest('#mb'))return;document.removeEventListener('pointerdown',f);if(S.mu!==false&&!MU.on)mon()});
+document.addEventListener('visibilitychange',function(){if(!AC)return;if(document.hidden)AC.suspend();else if(MU.on)AC.resume()});
+login();
+</script></body></html>
